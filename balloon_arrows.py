@@ -5,21 +5,13 @@ class Solution(object):
         :rtype: int
         """
         # Sort balloons based on the right endpoint of the balloon
-        print(points)
         balloons = sorted(points, key=lambda x: x[1])
-        print(balloons)
 
         arrows = 0
         cur_right = float('inf')*-1
         for i in range(len(balloons)):
             left = balloons[i][0]
             right = balloons[i][1]
-            print(i)
-            print(left)
-            print(right)
-            print(cur_right)
-            print(arrows)
-            print('\n')
             if left > cur_right:
                 arrows += 1
                 cur_right = right

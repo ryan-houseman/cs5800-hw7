@@ -27,13 +27,10 @@ class Solution(object):
                 moves.append(max([abs(s_left),abs(s_right)]))
             s_left = s_right*-1
         
-        print(moves)
+        print('Minimum # of Moves required: ' + str(max(moves)))
         return(max(moves))
-
             
             
-        
-
 #################################################################
 
 # Test Case A:
